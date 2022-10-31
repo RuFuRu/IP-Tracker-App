@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Tracker App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h2>IP Address Tracker</h2>
+        <div class="search-ip-container">
+          <input type="text" name="search-ip" id="search-ip" placeholder="Search for any IP address or domain">
+          <button><img src="/images/icon-arrow.svg" alt="icon-arrow"></button>
+        </div>
+        <div class="ip-result">
+          <div class="ip-address">
+            <h5>IP ADDRESS</h5>
+            <p></p>
+          </div>
+          <hr>
+          <div class="location">
+            <h5>LOCATION</h5>
+            <p></p>
+          </div>
+          <hr>
+          <div class="timezone">
+            <h5>TIMEZONE</h5>
+            <p></p>
+          </div>
+          <hr>
+          <div class="isp">
+            <h5>ISP/ORG</h5>
+            <p></p>
+          </div>
+        </div>
+      </header>
+      <div class="map-wrapper">
+        <div id="map" style="height: 70vh; z-index: 1;"> 
+      </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
